@@ -1,0 +1,49 @@
+.home {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1500px;
+}
+
+.home_row {
+    display: flex;
+    z-index: 1;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.home_image {
+    width: 100%;
+    z-index: -1;
+    margin-bottom: -150px;
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) , rgba(0 , 0, 0, 0));
+}
+
+/* Responsive styles for different devices */
+@media screen and (max-width: 1000.400px) {
+    /* For the specified range */
+    .home_row {
+        margin-right: -250px;
+        margin-left: auto;
+    }
+
+    .home_image {
+        margin-bottom: -250px;
+    }
+}
+
+@media screen and (max-width: 480px) and (min-width: 313.600px) {
+
+    .home_row {
+        margin-left: -250px;
+        margin-right: -250px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* For even smaller phones */
+    .home_image {
+        margin-bottom: -50px;
+    }
+}

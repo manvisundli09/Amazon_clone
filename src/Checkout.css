@@ -1,0 +1,36 @@
+.checkout {
+    display: flex;
+    padding: 20px;
+    background-color: white;
+    height: max-content;
+}
+
+.checkout_add {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.checkout_title {
+    margin-right: 10px;
+    padding: 10px;
+    border-bottom: 1px solid lightgray;
+}
+
+/* Media query for tablets and smaller screens */
+@media screen and (max-width: 1024px) and (min-width: 313.600px) {
+    .checkout {
+        flex-direction: column; /* Stack items vertically */
+    }
+    
+    .checkout_add {
+        width: -200px; /* Allow width to adjust to content */
+        margin-bottom: 10px;
+    }
+    
+    .checkout_title {
+        margin-right: 0; /* Remove margin */
+        margin-bottom: 10px; /* Add margin bottom for separation */
+        padding: 10px;
+        border-bottom: 1px solid lightgray;
+    }
+}

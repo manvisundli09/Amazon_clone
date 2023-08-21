@@ -1,0 +1,54 @@
+.payment {
+    background-color: white;
+}
+
+.payment_container > h1 {
+    text-align: center;
+    padding: 10px;
+    font-weight: 400;
+    background-color: rgb(234, 237, 237);
+    border-bottom: 1px solid lightgray;
+}
+
+.payment_container > h1 a{
+    text-decoration: none;
+}
+
+.payment_section {
+    display: flex;
+    padding: 20px;
+    margin: 0 20px;
+    border-bottom: 1px solid lightgray;
+}
+
+.payment_title {
+    flex: 0.2;
+}
+
+.payment_address , .payment_items, .payment_details {
+    flex: 0.8;
+}
+
+/* Responsive styles for different devices */
+@media screen and (max-width: 768px) {
+    /* For tablets, iPhones, and small phones */
+    .payment_container > h1 {
+        font-size: 18px;
+    }
+
+    .payment_section {
+        flex-direction: column;
+        padding: 15px;
+        margin: 0 10px;
+    }
+
+    .payment_title {
+        flex: 1;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .payment_address, .payment_items, .payment_details {
+        flex: 1;
+    }
+}
